@@ -3,4 +3,10 @@
     <string name="submit_btn_text">SUBMIT</string>
     <string name="team_one_label">Enter a name for the first team</string>
     <string name="team_two_label">Enter a name for the second team</string>
+    <string name="extra_pt">Extra Point</string>
+    <string name="safety">Safety</string>
+    <string name="two_pt_conversion">2-Pt Conversion</string>
+    <string name="field_goal">Field Goal</string>
+    <string name="touchdown">Touchdown</string>
+    <string name="reset">RESET</string>
 </resources>

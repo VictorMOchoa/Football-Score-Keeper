@@ -1,5 +1,6 @@
 package com.eatanapple.footballscoretracker;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -21,13 +22,12 @@ public class MainActivity extends AppCompatActivity {
     Button submitBtn;
 
     String teamOneName, teamTwoName;
-    
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
-
 
         submitBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -36,6 +36,10 @@ public class MainActivity extends AppCompatActivity {
                 teamTwoName = teamTwoEditText.getText().toString();
                 if (isInputValid(teamOneName) && isInputValid(teamTwoName)) {
                     // Do cool stuff
+                    Intent intent = new Intent(MainActivity.this, ScoreKeeperActivity.class);
+                    intent.putExtra("firstTeam", teamOneName);
+                    intent.putExtra("secondTeam", teamTwoName);
+                    startActivity(intent);
                 } else {
                     Toast.makeText(getApplicationContext(),
                             "Please validate that you have entered a name for both teams",
