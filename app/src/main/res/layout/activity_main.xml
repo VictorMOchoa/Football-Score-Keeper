@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/black"
     tools:context="com.eatanapple.footballscoretracker.MainActivity">
 
     <TextView
@@ -13,6 +14,7 @@
         android:layout_marginStart="96dp"
         android:layout_marginTop="56dp"
         android:text="@string/team_one_label"
+        android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.139"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -27,9 +29,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="96dp"
         android:layout_marginTop="12dp"
+        android:background="@color/colorPrimary"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
+        android:textColor="@android:color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/team_name_one_prompt_tv" />
 
@@ -40,6 +43,7 @@
         android:layout_marginStart="96dp"
         android:layout_marginTop="24dp"
         android:text="@string/team_two_label"
+        android:textColor="@android:color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/team_one_et" />
 
@@ -49,9 +53,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="96dp"
         android:layout_marginTop="12dp"
+        android:background="@color/colorPrimary"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
+        android:textColor="@android:color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/team_name_two_prompt_tv" />
 
